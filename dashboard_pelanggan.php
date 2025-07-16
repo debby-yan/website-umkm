@@ -69,9 +69,7 @@ $namaPelanggan = $_SESSION['user']['name'];
 
 <main>
     <div class="welcome">Selamat datang, <strong><?= htmlspecialchars($namaPelanggan) ?></strong>!</div>
-
     <p>Ini adalah halaman khusus untuk pelanggan. Anda bisa menampilkan data produk, histori pembelian, atau fitur lainnya di sini.</p>
-
     <form method="POST" action="logout.php">
         <button class="button-logout" type="submit">Logout</button>
     </form>
