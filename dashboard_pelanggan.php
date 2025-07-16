@@ -1,7 +1,5 @@
 <?php
 session_start();
-
-// Cek apakah user sudah login dan memiliki role pelanggan
 if (!isset($_SESSION['user']) || $_SESSION['user']['role'] !== 'pelanggan') {
     header('Location: login.php');
     exit;
